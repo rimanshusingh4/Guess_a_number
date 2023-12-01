@@ -26,7 +26,7 @@ function validateGuess(guess){
   else if(guess < 1 || guess >100 ){alert('Number Should be Greater then 0 and Small then 10')}
   else {
     prevGuess.push(guess);
-    if(numGuess == 11){
+    if(numGuess == 10){
       displayGuess(guess);
       displayMess(`GAME OVER! Number is: ${randnum}`);
       endGame();
