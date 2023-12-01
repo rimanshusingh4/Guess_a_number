@@ -60,7 +60,7 @@ function endGame(){
   inp.value= '';
   inp.setAttribute('disabled', '');
   p.classList.add('button');
-  p.innerHTML = `<h3 id = "newGame">Start New Game</h3>`
+  p.innerHTML = `<h2 id = "newGame">Start New Game</h2>`
   startOver.appendChild(p);
   play = false;
   newGame();
