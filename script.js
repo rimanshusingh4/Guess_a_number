@@ -1,4 +1,4 @@
-let randnum = parseInt(Math.random()*100+1);
+let randnum = parseInt(Math.random()*10+1);
 const submit = document.querySelector('#subt');
 const inp = document.querySelector('#guessField');
 const guessSlot = document.querySelector('.guesses');
@@ -23,7 +23,7 @@ function validateGuess(guess){
   if(isNaN(guess)){
     alert('Please Enter a Valid Number');
   }
-  else if(guess < 1 || guess >100 ){alert('Number Should be Greater then 0 and Small then 100')}
+  else if(guess < 1 || guess >100 ){alert('Number Should be Greater then 0 and Small then 10')}
   else {
     prevGuess.push(guess);
     if(numGuess == 11){
@@ -42,8 +42,8 @@ function checkGuess(guess){
     displayMess(`Congratulation, Matched ${guess}`)
     endGame();
   }
-  else if(guess < randnum){displayMess(`Guessed number is TOO Low`);}
-  else if(guess > randnum){displayMess(`Guessed number is TOO High`);}
+  else if(guess < randnum){displayMess(`Guessed Number is TOO Low`);}
+  else if(guess > randnum){displayMess(`Guessed Number is TOO High`);}
 
 }
 function displayGuess(guess){
