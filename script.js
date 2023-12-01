@@ -42,8 +42,8 @@ function checkGuess(guess){
     displayMess(`Congratulation, Matched ${guess}`)
     endGame();
   }
-  else if(guess < randnum){displayMess(`Guessed no is TOO Low`);}
-  else if(guess > randnum){displayMess(`Guessed no is TOO High`);}
+  else if(guess < randnum){displayMess(`Guessed number is TOO Low`);}
+  else if(guess > randnum){displayMess(`Guessed number is TOO High`);}
 
 }
 function displayGuess(guess){
